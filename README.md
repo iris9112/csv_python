@@ -9,7 +9,10 @@ Ejemplos de manejo de archivos csv con python.
 
 - `dask_csv.py` ejemplo usando dask para leer un archivo grande (7.43 GB) en csv.
   - Link de datos de pruebas: [311 Service Requests dataset](https://data.cityofnewyork.us/Social-Services/311-Service-Requests/fvrb-kbbt)
-  - TODO: tomar nota del tiempo que tarda ~~ 70seg
+  - Tiempo tomado en computar las 7gb de registros ~~ 4min
+
+- `pandas_accidents.py` ejemplo de real python modificado para evitar el error: *out of memory*
+  - Link de datos de prueba: [Accidents from data.gov.uk](http://data.dft.gov.uk/road-accidents-safety-data/Stats19-Data1979-2004.zip)
 
 ## Librerias usadas
 
