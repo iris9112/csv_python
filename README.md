@@ -23,3 +23,11 @@ Ejemplos de manejo de archivos csv con python.
 
 - [working-with-large-excel-files-in-pandas](https://realpython.com/working-with-large-excel-files-in-pandas/)
 - [dask-large-csv-python](https://pythondata.com/dask-large-csv-python/)
+
+## CSV y Django
+
+- Obligatorio agregar el atributo `enctype="multipart/form-data"`, sino el request.FILES estará vacío.
+- También el método de formulario debe ser el POST.
+- Django proporciona dos campos modelo, `FileField` e `ImageField`, y los archivos cargados en ellos se almacenan en el sistema de archivos (MEDIA).
+- `FileField` e `ImageField` se agregan a la base de datos como VARCHAR y contienen la referencia al archivo cargado. *En caso de que estos dos campos se eliminen de la base de datos, solo se eliminará la referencia al archivo físico.*
+- Para acceder a `MEDIA_URL` en la plantilla se debe agregar `django.template.context_processors.media` a los procesadores de contexto.
